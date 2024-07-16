@@ -2,7 +2,7 @@ import React from "react";
 import "../../styles/index.css"; // Corrected import path
 
 const sendEmail = async (email, name, message) => {
-    const response = await fetch('/api/send-email', {
+    const response = await fetch('https://test-mm.vercel.app/api/send-email', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
