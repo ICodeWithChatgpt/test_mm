@@ -2,7 +2,7 @@ import postmark from 'postmark';
 
 
 //Initialize the Postmark client
-export const client = new postmark.ServerClient(process.env.POSTMARK_API_KEY);
+const client = new postmark.ServerClient(process.env.POSTMARK_API_KEY);
 
 export default async function sendEmail(req, res) {
     if (req.method === 'POST') {
