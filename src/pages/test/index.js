@@ -22,10 +22,10 @@ const Test = () => (
         <h1 className="test-title">Hello World</h1>
         <p className="test-description">Welcome to your new Gatsby site.</p>
         <button className="send-email-button"
-                onClick={sendEmail(
+                onClick={() => sendEmail(
                     'mario.rubio.c@gmail.com',
                     'testName',
-                    'This is a test emaik'
+                    'This is a test email from the Gatsby site.'
                 )}>Send Test Email</button>
     </div>
 );
